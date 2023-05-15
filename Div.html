@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DIV</title>
+</head>
+<body>
+<p>Nhập số: <p/>
+<input type="number" id="result">
+<button type="button" onclick="check1()">/2</button>
+<button type="button" onclick="check2()">x2</button>
+</body>
+
+<script>
+    function check1(){
+        let a = document.getElementById("result").valueAsNumber;
+
+        let input = a / 2;
+        document.getElementById("result").value = input;
+
+    }
+    function check2(){
+        let b = document.getElementById("result").valueAsNumber;
+
+        let input = b * 2;
+        document.getElementById("result").value = input;
+
+    }
+
+</script>
+</html>
